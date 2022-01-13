@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.score-board{
+    display: flex;
+}
+
+
+.cell{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid #B8E4F0;
+}
+
+.playArea{
+    display: grid;
+    grid-template-rows: repeat(25, 25px);
+    grid-template-columns: repeat(25, 25px);
+
+    place-items: center;
+}
+
+.snakeBody{
+    width: 25px;
+    height: 25px;
+    background-color: #212121;
+    border-color: #212121;
+}
+
+
+.snakeHead{
+    width: 25px;
+    height: 25px;
+    background-color: coral;
+    border-color: coral;
+}
+
+.food{
+    width: 25px;
+    height: 25px;
+    background-color: aquamarine;
+    border-color: aquamarine;
+}
